@@ -1489,6 +1489,25 @@ h2.title {
   padding: 6px 25px;
 }
 
+.botao {
+  background: #FE980F!important;
+  border: medium none!important;
+  border-radius: 0!important;
+  color: #FFFFFF!important;
+  display: block!important;
+  font-family: 'Roboto', sans-serif!important;
+  padding: 6px 25px!important;
+  margin-top: 23px!important;
+}
+
+.vinteP {
+    width: 20%!important;
+}
+
+.cinqP{
+    width: 50%!important;
+}
+
 .login-form label{
 
 }
@@ -1504,7 +1523,7 @@ h2.title {
 }
 
 
-.or{
+.ou{
 	background: #FE980F;
 	border-radius: 40px;
 	color: #FFFFFF;
