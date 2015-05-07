@@ -1,39 +1,45 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
                 template="./base.xhtml">
-
     <ui:define name="content">
-        <section id="form"><!--form-->
+        <section id="form">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-1">
-                        <div class="login-form"><!--login form-->
-                            <h2>Login to your account</h2>
-                            <form action="#">
-                                <input type="text" placeholder="Name" />
-                                <input type="email" placeholder="Email Address" />                                
-                                <button type="submit" class="btn btn-default">Login</button>
-                            </form>
-                        </div><!--/login form-->
+                        <div class="login-form">
+                            <h2>Logar na sua conta</h2>
+                            <h:form>
+                                <h:inputText value="" pt:placeholder="Email"/>
+                                <h:inputSecret value="" pt:placeholder="Senha"/>                               
+                                <h:commandButton value="Login" action="user" class="btn btn-default botao"/>
+                            </h:form>
+                        </div>
                     </div>
                     <div class="col-sm-1">
-                        <h2 class="or">OR</h2>
+                        <h2 class="ou">OU</h2>
                     </div>
                     <div class="col-sm-4">
                         <div class="signup-form"><!--sign up form-->
-                            <h2>New User Signup!</h2>
-                            <form action="#">
-                                <input type="text" placeholder="Name"/>
-                                <input type="email" placeholder="Email Address"/>
-                                <input type="password" placeholder="Password"/>
-                                <button type="submit" class="btn btn-default">Signup</button>
-                            </form>
-                        </div><!--/sign up form-->
+                            <h2>Novos Usuarios</h2>
+                            <h:form>
+                                <h:inputText value="" pt:placeholder="Nome"/>
+                                <h:inputText value="" pt:placeholder="Email"/>
+                                <h:inputSecret value="" pt:placeholder="Senha"/>
+                                <h:inputSecret value="" pt:placeholder="CPF"/>
+                                <h:inputSecret value="" pt:placeholder="CEP" class="cinqP"/>
+                                <h:inputSecret value="" pt:placeholder="Endereco"/>
+                                <h:inputSecret value="" pt:placeholder="Numero" class="vinteP"/>
+                                <h:inputSecret value="" pt:placeholder="Cidade" class="cinqP"/>
+                                <h:inputSecret value="" pt:placeholder="Estado" class="vinteP"/>
+                                <h:commandButton value="Cadastrar" action="user" class="btn btn-default botao"/>
+                            </h:form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section><!--/form-->
+        </section>
     </ui:define>
-
 </ui:composition>
