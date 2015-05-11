@@ -6,6 +6,8 @@ public class Usuario implements Serializable{
     private int usuario_id;
     private String nome,cpf,cep,numero,cidade,estado, endereco, email, senha;
 
+    public Usuario(){};
+    
     public Usuario(String nome, String cpf, String cep, String numero, String cidade, String estado, String endereco, String email, String senha) {
         this.nome = nome;
         this.cpf = cpf;

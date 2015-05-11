@@ -1,13 +1,13 @@
 package Service;
 
-import ServicesInterface.LocalUsuario;
+import ServicesInterface.LocalCategoria;
 import ServicesInterface.ObeyServices;
 import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
 
 @Stateless
 @LocalBean
-public class Pedido implements LocalUsuario,ObeyServices  {
+public class CategoriaServico implements LocalCategoria,ObeyServices{
 
     @Override
     public Object selectAll() {
@@ -33,4 +33,5 @@ public class Pedido implements LocalUsuario,ObeyServices  {
     public void delete(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
 }

@@ -1,13 +1,13 @@
 package Service;
 
-import ServicesInterface.LocalUsuario;
+import ServicesInterface.LocalProduto;
 import ServicesInterface.ObeyServices;
 import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
 
 @Stateless
 @LocalBean
-public class Produto implements LocalUsuario,ObeyServices {
+public class ProdutoServico implements LocalProduto,ObeyServices {
 
     @Override
     public Object selectAll() {
