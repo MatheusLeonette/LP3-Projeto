@@ -1,6 +1,7 @@
 package Service;
 
 
+import Model.Usuario;
 import ServicesInterface.LocalUsuario;
 import ServicesInterface.ObeyServices;
 import javax.ejb.Stateless;

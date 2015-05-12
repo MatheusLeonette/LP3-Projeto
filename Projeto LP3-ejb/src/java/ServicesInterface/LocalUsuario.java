@@ -1,4 +1,5 @@
 package ServicesInterface;
+import Model.Usuario;
 import javax.ejb.Local;
 
 @Local
