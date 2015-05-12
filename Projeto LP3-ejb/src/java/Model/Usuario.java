@@ -1,7 +1,5 @@
 package Model;
 
-import DAO.Avaliacao;
-import DAO.ListaDeCompra;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
