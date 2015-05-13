@@ -10,7 +10,7 @@ import javax.ejb.LocalBean;
 public class ItemDePedidoServico implements LocalItemDePedido,ObeyServices{
 
     @Override
-    public Object selectAll() {
+    public Object listAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -20,7 +20,7 @@ public class ItemDePedidoServico implements LocalItemDePedido,ObeyServices{
     }
 
     @Override
-    public void insert(Object object) {
+    public void novo(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

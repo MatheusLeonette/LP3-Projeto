@@ -11,7 +11,7 @@ import javax.ejb.LocalBean;
 @LocalBean
 public class UsuarioServico implements LocalUsuario,ObeyServices {
     @Override
-    public Object selectAll() {
+    public Object listAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -21,7 +21,7 @@ public class UsuarioServico implements LocalUsuario,ObeyServices {
     }
 
     @Override
-    public void insert(Object object) {
+    public void novo(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

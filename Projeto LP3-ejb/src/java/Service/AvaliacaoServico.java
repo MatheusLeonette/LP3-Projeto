@@ -8,11 +8,7 @@ import javax.ejb.LocalBean;
 @Stateless
 @LocalBean
 public class AvaliacaoServico implements LocalAvaliacao,ObeyServices {
-
-    @Override
-    public Object selectAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
     @Override
     public Object select(int id) {
@@ -20,7 +16,7 @@ public class AvaliacaoServico implements LocalAvaliacao,ObeyServices {
     }
 
     @Override
-    public void insert(Object object) {
+    public void novo(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -33,4 +29,10 @@ public class AvaliacaoServico implements LocalAvaliacao,ObeyServices {
     public void delete(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public Object listAll() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+   
 }

@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlTransient;
 @Entity
 public class Usuario implements Serializable{
-    // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
+    
     @Id
     @Basic(optional = false)
     @NotNull
